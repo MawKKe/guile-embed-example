@@ -7,11 +7,19 @@ GNU Guile Scheme C/C++ embedding example - with CMake integration
     $ cmake -B build .
     $ cmake --build build
 
+or via Docker:
+
+    $ docker build -t guile-example-build .
+
 # Run
 
 Run the executable, which opens a Guile shell:
 
     $ ./build/guile-test
+
+or if you built the Docker image:
+
+    $ docker run -it --rm guile-example-build guile-test
 
 ...then access the custom subroutines in the repl:
 
