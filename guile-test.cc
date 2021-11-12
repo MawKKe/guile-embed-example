@@ -29,7 +29,7 @@ my_hostname(void)
 {
     char *s = getenv("HOSTNAME");
     if (s == NULL)
-        scm_misc_error(__func__, "HOSTNAME env variable is null ~A", SCM_BOOL_F);
+        scm_misc_error(__func__, "HOSTNAME env variable is null", SCM_BOOL_F);
     else
         return scm_from_locale_string(s);
 }
