@@ -14,3 +14,5 @@ target_compile_options(guile-test
     PRIVATE
         $<$<CONFIG:Debug>:-Wall -Wextra -pedantic -Wshadow -Wunused -Wconversion>
 )
+
+install(TARGETS guile-test DESTINATION "." RUNTIME DESTINATION bin)
