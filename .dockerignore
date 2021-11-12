@@ -1,0 +1,3 @@
+*
+!*.cc
+!CMakeLists.txt
