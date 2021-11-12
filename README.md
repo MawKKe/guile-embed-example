@@ -50,6 +50,7 @@ is not set at runtime, the native function raises a `misc-error` into the guile 
 Tested on Ubuntu 20.04. The following packages are needed:
 
 - `guile-3.0-dev`
+- `libgmp-dev`
 - `cmake` >= 3.10
 - `build-essential`
 - `pkg-config`
